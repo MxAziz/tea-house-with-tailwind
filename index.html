@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font awesome cdn -->
+    <script src="https://kit.fontawesome.com/a4b6285254.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      }
+    </script>
 </head>
 <body>
-    
-    <header>
 
-    </header>
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
 
-    <main>
+        <!-- header section  -->
+        <header class="md:flex  pt-10 mb-20 border">
+        <!-- text content -->
+         <div class="">
+            <h1 class="text-5xl md:text-7xl font-semibold md:font-bold lg:font-extrabold text-[#1C1C1C]">It's good <br>
+                tea time at The <br> Tea House</h1>
+                <p class="text-[#777777] my-8">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 text-white font-bold rounded-lg flex">Explore More <img class="w-3  mt-2 ml-1  mx-auto" src="./images/arrow.png" alt="btn-icon"></button>
+         </div>
+         <!-- banner img content -->
+          <div class="relative">
+            <!-- image -->
+             <div class="">
+                <img class="w-full" src="./images/banner.png" alt="">
+            </div>
+            <!-- card -->
+             <div class=" absolute flex gap-3  bg-white px-2  py-2 md:px-4 md:py-4 lg:py-4 rounded-lg shadow-lg items-center top-28 md:top-80 md:left-24 lg:left-28 ">
+                <!-- icon -->
+                 <div class="text-[#FFC850] text-2xl"><i class="fa-solid fa-star"></i></div>
+                 <!-- text -->
+                  <div>
+                    <h2 class="text-2xl font-bold">5.00</h2>
+                    <p class="text-[#777777]">Trust Pilot Ratings</p>
+                  </div>
+
+             </div>
+
+          </div>
+         </header>
 
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
 </html>
